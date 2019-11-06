@@ -15,6 +15,13 @@ class MainActivity : AppCompatActivity() {
         marketCard.setOnClickListener { openFlutterActivity("markets") }
     }
 
+    // Initial Path
+    private fun openFlutter(route: String) {
+
+    }
+
+
+    // Route 2 (workaround)
     private fun openFlutterActivity(route: String) {
         val intent = MainFlutterActivity.createIntent(this, route)
         startActivity(intent)
